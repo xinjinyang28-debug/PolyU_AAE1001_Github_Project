@@ -271,12 +271,11 @@ class AStarPlanner:
 
         return motion
 
-
 def main():
     print(__file__ + " start the A star algorithm demo !!") # print simple notes
 
     # start and goal position
-    sx = 0.0  # [m]
+    sx = -10.0  # [m]
     sy = -10.0  # [m]
     gx = 60.0  # [m]
     gy = 20.0  # [m]
@@ -297,7 +296,7 @@ def main():
     for i in range(-20, 70):
         ox.append(-20.0)
         oy.append(i)
-    for i in range(20, 45):
+    for i in range(8, 45):
         ox.append(i)
         oy.append(0.8*i-26)
     for i in range(0, 10):
